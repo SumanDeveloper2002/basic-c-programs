@@ -1,0 +1,24 @@
+//logic: Every year that is exactly divisible by 4 is leap year, except the centurial year that is eactly divisible by 100.  But the centurial years are leap year if the year is exactly divisible by 400.
+
+#include<stdio.h>
+int main(){
+	int year;
+	printf("Enter the year::");
+	scanf("%d",&year);
+	if(year%4==0)
+	{
+		if(year%100==0)
+		{
+			if(year%400==0)
+			{
+				printf("Leap year");
+			}
+			printf("Not Leap year");
+		}
+		else
+		printf("Leap year");
+	}
+	else
+	printf("Not Leap year");
+	return 0;
+}
